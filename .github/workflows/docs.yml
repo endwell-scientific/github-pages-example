@@ -3,6 +3,9 @@ name: Build and Deploy MkDocs
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -37,4 +40,11 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
