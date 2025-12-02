@@ -1,5 +1,7 @@
 site_name: Your Project
 
+site_url: https://<user>.github.io/<repo>/	
+
 theme:
   name: material
 
