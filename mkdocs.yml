@@ -13,6 +13,7 @@ nav:
       - Overview: docs/index.md
   - Notes:
       - Overview: notes/index.md
+      - Cheat sheet: notes/cheat-sheet.md
 
 markdown_extensions:
   - admonition
