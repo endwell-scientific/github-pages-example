@@ -129,9 +129,6 @@ pymdown-extensions
 Add a GitHub Actions workflow at ```.github/workflows/docs.yml```:
 
 ```
-        uses: actions/deploy-pages@v4
-~
-~
 name: Build and Deploy MkDocs
 
 on:
